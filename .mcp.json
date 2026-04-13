@@ -1,0 +1,20 @@
+{
+  "name": "security-scanner-ai-mcp",
+  "description": "MEOK AI Labs \u2014 security-scanner-ai-mcp \u2014 Scan code for common security issues.",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/security-scanner-ai-mcp",
+  "runtime": "python",
+  "entrypoint": "server.py",
+  "tools": [
+    "run"
+  ],
+  "categories": [
+    "Security",
+    "DevOps"
+  ],
+  "pricing": {
+    "free": "50 calls/day",
+    "pro": "$9/mo"
+  }
+}

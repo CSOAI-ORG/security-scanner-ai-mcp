@@ -1,0 +1,10 @@
+name: security-scanner-ai-mcp
+description: "MEOK AI Labs — security-scanner-ai-mcp — Scan code for common security issues."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/security-scanner-ai-mcp
+license: MIT
+categories: [Security, DevOps]
+tags: [security-scanning, vulnerability-scanner, penetration-testing, code-security]
+runtime: python
+entrypoint: server.py
