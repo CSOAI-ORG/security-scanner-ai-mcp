@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """Security scanning and vulnerability assessment. — MEOK AI Labs."""
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import json, os, re, hashlib, math, random, string, time
 from datetime import datetime, timezone
 from typing import Optional
@@ -18,48 +23,64 @@ mcp = FastMCP("security-scanner-ai", instructions="MEOK AI Labs — Security sca
 
 
 @mcp.tool()
-def scan_dependencies(requirements: str) -> str:
+def scan_dependencies(requirements: str, api_key: str = "") -> str:
     """MEOK AI Labs tool."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if err := _rl(): return err
     result = {"tool": "scan_dependencies", "timestamp": datetime.now(timezone.utc).isoformat()}
     # Process input
     local_vars = {k: v for k, v in locals().items() if k not in ('result',)}
     result["input"] = str(local_vars)[:200]
     result["status"] = "processed"
-    return json.dumps(result, indent=2)
+    return result
 
 @mcp.tool()
-def check_headers(url: str) -> str:
+def check_headers(url: str, api_key: str = "") -> str:
     """MEOK AI Labs tool."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if err := _rl(): return err
     result = {"tool": "check_headers", "timestamp": datetime.now(timezone.utc).isoformat()}
     # Process input
     local_vars = {k: v for k, v in locals().items() if k not in ('result',)}
     result["input"] = str(local_vars)[:200]
     result["status"] = "processed"
-    return json.dumps(result, indent=2)
+    return result
 
 @mcp.tool()
-def scan_secrets(code: str) -> str:
+def scan_secrets(code: str, api_key: str = "") -> str:
     """MEOK AI Labs tool."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if err := _rl(): return err
     result = {"tool": "scan_secrets", "timestamp": datetime.now(timezone.utc).isoformat()}
     # Process input
     local_vars = {k: v for k, v in locals().items() if k not in ('result',)}
     result["input"] = str(local_vars)[:200]
     result["status"] = "processed"
-    return json.dumps(result, indent=2)
+    return result
 
 @mcp.tool()
-def owasp_check(endpoint_description: str) -> str:
+def owasp_check(endpoint_description: str, api_key: str = "") -> str:
     """MEOK AI Labs tool."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if err := _rl(): return err
     result = {"tool": "owasp_check", "timestamp": datetime.now(timezone.utc).isoformat()}
     # Process input
     local_vars = {k: v for k, v in locals().items() if k not in ('result',)}
     result["input"] = str(local_vars)[:200]
     result["status"] = "processed"
-    return json.dumps(result, indent=2)
+    return result
 
 
 if __name__ == "__main__":

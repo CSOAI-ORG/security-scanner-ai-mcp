@@ -1,10 +1,28 @@
 name: security-scanner-ai-mcp
-description: "MEOK AI Labs — security-scanner-ai-mcp — Scan code for common security issues."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/security-scanner-ai-mcp
-license: MIT
-categories: [Security, DevOps]
-tags: [security-scanning, vulnerability-scanner, penetration-testing, code-security]
-runtime: python
-entrypoint: server.py
+description: "security-scanner-ai-mcp \u2014 Scan code for common security issues."
+version: 1.0.0
+tools:
+- name: scan_dependencies
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: requirements
+    type: string
+    required: true
+- name: check_headers
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: url
+    type: string
+    required: true
+- name: scan_secrets
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: code
+    type: string
+    required: true
+- name: owasp_check
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: endpoint_description
+    type: string
+    required: true

@@ -1,20 +1,67 @@
 {
   "name": "security-scanner-ai-mcp",
-  "description": "MEOK AI Labs \u2014 security-scanner-ai-mcp \u2014 Scan code for common security issues.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/security-scanner-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "security-scanner-ai-mcp \u2014 Scan code for common security issues.",
+  "version": "1.0.0",
   "tools": [
-    "run"
-  ],
-  "categories": [
-    "Security",
-    "DevOps"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "scan_dependencies",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "requirements": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "requirements"
+        ]
+      }
+    },
+    {
+      "name": "check_headers",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    {
+      "name": "scan_secrets",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code"
+        ]
+      }
+    },
+    {
+      "name": "owasp_check",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "endpoint_description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "endpoint_description"
+        ]
+      }
+    }
+  ]
 }
