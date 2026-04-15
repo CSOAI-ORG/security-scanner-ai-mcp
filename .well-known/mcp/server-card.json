@@ -1,0 +1,57 @@
+{
+  "name": "security-scanner-ai",
+  "description": "MEOK AI Labs \u2014 Security scanning. OWASP Top 10, dependency scanning, secret detection, HTTP header analysis.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/security-scanner-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "scan_dependencies",
+      "description": "Scan requirements.txt for vulnerable dependencies."
+    },
+    {
+      "name": "check_headers",
+      "description": "Check HTTP security headers on a URL."
+    },
+    {
+      "name": "scan_secrets",
+      "description": "Scan code for hardcoded secrets, API keys, credentials."
+    },
+    {
+      "name": "owasp_check",
+      "description": "Check endpoint against OWASP Top 10 2021."
+    },
+    {
+      "name": "scan_owasp_2021",
+      "description": "Full OWASP Top 10 2021 vulnerability scanner."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Security & Compliance"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
