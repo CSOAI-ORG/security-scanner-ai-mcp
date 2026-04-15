@@ -1,6 +1,6 @@
 {
   "name": "security-scanner-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs \u2014 Security scanning and vulnerability assessment.",
+  "description": "Security Scanner Ai automation via MCP. Includes scan dependencies, check headers, scan secrets. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
