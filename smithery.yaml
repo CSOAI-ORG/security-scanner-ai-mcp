@@ -1,5 +1,5 @@
 name: security-scanner-ai-mcp
-description: "security-scanner-ai-mcp \u2014 Scan code for common security issues."
+description: "MEOK AI Labs \u2014 Security scanning and vulnerability assessment."
 version: 1.0.0
 tools:
 - name: scan_dependencies
