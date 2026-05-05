@@ -1,30 +1,38 @@
-# Security Scanner AI MCP Server
+<div align="center">
 
-> **By [MEOK AI Labs](https://meok.ai)** — Sovereign AI tools for everyone.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/security-scanner-ai-mcp)](https://github.com/CSOAI-ORG/security-scanner-ai-mcp/stargazers)
 
-Security scanning: OWASP Top 10 2021, dependency vulnerability scanning, secret detection, HTTP header analysis.
+# usecurityU scannerU aiU mcp
 
-## Tools
+**Security scanning: OWASP Top 10 2021, dependency vulnerability scanning, secret detection, HTTP header analysis.**
 
-| Tool | Description |
-|------|-------------|
-| `scan_dependencies` | Scan requirements.txt for vulnerable libraries |
-| `check_headers` | Check HTTP security headers |
-| `scan_secrets` | Detect hardcoded secrets in code |
-| `owasp_check` | Check endpoint against OWASP Top 10 |
-| `scan_owasp_2021` | Full OWASP Top 10 2021 vulnerability scanner |
+[![npm version](https://img.shields.io/npm/v/@meok-ai/security-scanner-ai-mcp)](https://www.npmjs.com/package/@meok-ai/security-scanner-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
 
-## Quick Start
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/security-scanner-ai-mcp/issues)
 
-```bash
-pip install mcp
-python server.py
-```
-
-## Part of MEOK AI Labs
-
-One of 250+ MCP servers. Browse all at [meok.ai](https://meok.ai)
+</div>
 
 ---
 
-**MEOK AI Labs** | [meok.ai](https://meok.ai) | nicholas@meok.ai
+## Installation
+
+```bash
+pip install security-scanner-ai-mcp
+# or
+npm install -g @meok-ai/security-scanner-ai-mcp
+```
+
+## Quick Start
+
+See the project repository for full documentation and examples.
+
+## Enterprise Support
+
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
+
+## License
+
+MIT © [CSOAI](https://csoai.org)
