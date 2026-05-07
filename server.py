@@ -96,6 +96,11 @@ def scan_dependencies(requirements: str, api_key: str = "") -> str:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        requirements (str): The requirements to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -164,6 +169,11 @@ def check_headers(url: str, api_key: str = "") -> str:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        url (str): The url to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -223,6 +233,11 @@ def scan_secrets(code: str, api_key: str = "") -> str:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        code (str): The code to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -279,6 +294,11 @@ def owasp_check(endpoint_description: str, api_key: str = "") -> str:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        endpoint_description (str): The endpoint description to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -348,6 +368,11 @@ def scan_owasp_2021(code: str, api_key: str = "") -> str:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        code (str): The code to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
