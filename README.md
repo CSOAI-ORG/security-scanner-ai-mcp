@@ -1,45 +1,59 @@
-[![security-scanner-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/security-scanner-ai-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/security-scanner-ai-mcp)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
-[![PyPI](https://img.shields.io/pypi/v/security-scanner-ai-mcp)](https://pypi.org/project/security-scanner-ai-mcp/)
-
-[![security-scanner-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/security-scanner-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/security-scanner-ai-mcp)
-
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/security-scanner-ai-mcp)](https://github.com/CSOAI-ORG/security-scanner-ai-mcp/stargazers)
+# Security Scanner Ai MCP
 
-# usecurityU scannerU aiU mcp
+**MCP server for security scanner ai mcp operations**
 
-**Security scanning: OWASP Top 10 2021, dependency vulnerability scanning, secret detection, HTTP header analysis.**
-
-[![npm version](https://img.shields.io/npm/v/@meok-ai/security-scanner-ai-mcp)](https://www.npmjs.com/package/@meok-ai/security-scanner-ai-mcp)
+[![PyPI](https://img.shields.io/pypi/v/meok-security-scanner-ai-mcp)](https://pypi.org/project/meok-security-scanner-ai-mcp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
-
-[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/security-scanner-ai-mcp/issues)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-MCP_Server-purple)](https://meok.ai)
 
 </div>
 
----
+## Overview
+
+Security Scanner Ai MCP provides AI-powered tools via the Model Context Protocol (MCP).
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `scan_dependencies` | Scan requirements.txt for vulnerable dependencies. |
+| `check_headers` | Check HTTP security headers on a URL. |
+| `scan_secrets` | Scan code for hardcoded secrets, API keys, credentials. |
+| `owasp_check` | Check endpoint against OWASP Top 10 2021. |
+| `scan_owasp_2021` | Full OWASP Top 10 2021 vulnerability scanner. |
 
 ## Installation
 
 ```bash
-pip install security-scanner-ai-mcp
-# or
-npm install -g @meok-ai/security-scanner-ai-mcp
+pip install meok-security-scanner-ai-mcp
 ```
 
-## Quick Start
+## Usage with Claude Desktop
 
-See the project repository for full documentation and examples.
+Add to your Claude Desktop MCP config (`claude_desktop_config.json`):
 
-## Enterprise Support
+```json
+{
+  "mcpServers": {
+    "security-scanner-ai-mcp": {
+      "command": "python",
+      "args": ["-m", "meok_security_scanner_ai_mcp.server"]
+    }
+  }
+}
+```
 
-- 📧 nicholas@csoai.org
-- 🌐 [CSOAI.org](https://csoai.org)
+## Usage with FastMCP
+
+```python
+from mcp.server.fastmcp import FastMCP
+
+# This server exposes 5 tool(s) via MCP
+# See server.py for full implementation
+```
 
 ## License
 
-MIT © [CSOAI](https://csoai.org)
-<!-- mcp-name: io.github.CSOAI-ORG/security-scanner-ai-mcp -->
+MIT © [MEOK AI Labs](https://meok.ai)
