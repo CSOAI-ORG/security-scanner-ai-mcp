@@ -1,0 +1,32 @@
+# Security Scanner Ai MCP
+
+> Security scanning MCP — vulnerability assessment, SAST, DAST, dependency checking, SBOM analysis
+
+`security-scanner-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install security-scanner-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx security-scanner-ai-mcp
+```
+
+## Tools
+
+- `scan_dependencies` — Scan requirements.txt for vulnerable dependencies.
+- `check_headers` — Check HTTP security headers on a URL.
+- `scan_secrets` — Scan code for hardcoded secrets, API keys, credentials.
+- `owasp_check` — Check endpoint against OWASP Top 10 2021.
+- `scan_owasp_2021` — Full OWASP Top 10 2021 vulnerability scanner.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/security-scanner-ai-mcp
+- PyPI: https://pypi.org/project/security-scanner-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
