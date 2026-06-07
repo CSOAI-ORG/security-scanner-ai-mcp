@@ -1,32 +1,36 @@
-# Security Scanner Ai MCP
-
-> Security scanning MCP — vulnerability assessment, SAST, DAST, dependency checking, SBOM analysis
-
-`security-scanner-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# security-scanner-ai-mcp
+# **MCP server for security scanner ai mcp operations**
 
 ## Install
-
 ```bash
 pip install security-scanner-ai-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx security-scanner-ai-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `scan_dependencies` — Scan requirements.txt for vulnerable dependencies.
-- `check_headers` — Check HTTP security headers on a URL.
-- `scan_secrets` — Scan code for hardcoded secrets, API keys, credentials.
-- `owasp_check` — Check endpoint against OWASP Top 10 2021.
-- `scan_owasp_2021` — Full OWASP Top 10 2021 vulnerability scanner.
+### `scan_dependencies`
+Scan requirements.txt for vulnerable dependencies.
 
-## Links
+### `check_headers`
+Check HTTP security headers on a URL.
 
-- Source: https://github.com/CSOAI-ORG/security-scanner-ai-mcp
-- PyPI: https://pypi.org/project/security-scanner-ai-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `scan_secrets`
+Scan code for hardcoded secrets, API keys, credentials.
+
+### `owasp_check`
+Check endpoint against OWASP Top 10 2021.
+
+### `scan_owasp_2021`
+Full OWASP Top 10 2021 vulnerability scanner.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

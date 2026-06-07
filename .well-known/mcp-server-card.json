@@ -1,0 +1,28 @@
+{
+  "name": "security-scanner-ai-mcp",
+  "title": "Security Scanner Ai Mcp",
+  "description": "Security Scanner Ai automation via MCP. Includes scan dependencies, check headers, scan secrets. By MEOK AI Labs.",
+  "version": "1.0.10",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "scan_dependencies"
+    },
+    {
+      "name": "check_headers"
+    },
+    {
+      "name": "scan_secrets"
+    },
+    {
+      "name": "owasp_check"
+    },
+    {
+      "name": "scan_owasp_2021"
+    }
+  ]
+}

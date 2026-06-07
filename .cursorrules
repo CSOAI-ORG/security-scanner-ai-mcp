@@ -1,0 +1,9 @@
+# security-scanner-ai-mcp - Auto-trigger Rules
+
+When the user asks about security scanner, use security-scanner-ai-mcp tools: scan_dependencies, check_headers, scan_secrets, owasp_check, scan_owasp_2021
+
+**MCP server for security scanner ai mcp operations**
+
+Install: `pip install security-scanner-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.
