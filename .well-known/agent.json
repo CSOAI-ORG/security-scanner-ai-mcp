@@ -1,0 +1,68 @@
+{
+  "name": "security-scanner-ai-mcp",
+  "description": "Security Scanner Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/security-scanner-ai-mcp.html",
+  "version": "1.0.10",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "scan_dependencies",
+      "name": "Scan Dependencies",
+      "description": "scan_dependencies via security-scanner-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_headers",
+      "name": "Check Headers",
+      "description": "check_headers via security-scanner-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "scan_secrets",
+      "name": "Scan Secrets",
+      "description": "scan_secrets via security-scanner-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "owasp_check",
+      "name": "Owasp Check",
+      "description": "owasp_check via security-scanner-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "scan_owasp_2021",
+      "name": "Scan Owasp 2021",
+      "description": "scan_owasp_2021 via security-scanner-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

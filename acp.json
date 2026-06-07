@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "security-scanner-ai-mcp",
+    "description": "Security Scanner Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.10",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "security-scanner-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "scan_dependencies",
+      "check_headers",
+      "scan_secrets",
+      "owasp_check",
+      "scan_owasp_2021"
+    ]
+  }
+}
