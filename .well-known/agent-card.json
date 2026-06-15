@@ -1,0 +1,112 @@
+{
+  "name": "Security Scanner Ai Mcp",
+  "version": "1.0.10",
+  "url": "https://mcp.meok.ai/security-scanner-ai-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "Security Scanner Ai automation via MCP. Includes scan dependencies, check headers, scan secrets. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "scan_dependencies",
+      "name": "Scan Dependencies",
+      "description": "Scan Dependencies — a tool of the security-scanner-ai-mcp MCP.",
+      "tags": [
+        "security"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_headers",
+      "name": "Check Headers",
+      "description": "Check Headers — a tool of the security-scanner-ai-mcp MCP.",
+      "tags": [
+        "security"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "scan_secrets",
+      "name": "Scan Secrets",
+      "description": "Scan Secrets — a tool of the security-scanner-ai-mcp MCP.",
+      "tags": [
+        "security"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "owasp_check",
+      "name": "Owasp Check",
+      "description": "Owasp Check — a tool of the security-scanner-ai-mcp MCP.",
+      "tags": [
+        "security"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "scan_owasp_2021",
+      "name": "Scan Owasp 2021",
+      "description": "Scan Owasp 2021 — a tool of the security-scanner-ai-mcp MCP.",
+      "tags": [
+        "security"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "security-scanner-ai-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
