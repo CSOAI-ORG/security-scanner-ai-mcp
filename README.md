@@ -115,3 +115,28 @@ Free tier: 10 calls/day per MCP. Pro tier (£79/mo): unlimited + cryptographical
 > Verify any signed report at <https://meok.ai/verify>.
 
 <!-- BUY-LADDER:END -->
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "security-scanner-ai-mcp": {
+      "command": "uvx",
+      "args": ["security-scanner-ai-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install security-scanner-ai-mcp` then run the `security-scanner-ai-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `scan_dependencies` to …"
+- "Use `check_headers` to …"
+- "Use `scan_secrets` to …"
